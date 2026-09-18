@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pramuka Survival Hub - materi survival Pramuka yang interaktif, terstruktur, dan aman.">
+  <title>Survival Pramuka | Survival Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progressBar"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="Survival Hub">
+      <span class="brand-mark">✦</span>
+      <span>
+        <strong>Survival Hub</strong>
+        <small>PRAMUKA</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#materi">Materi</a>
+      <a href="#perlengkapan">Perlengkapan</a>
+      <a href="#kuis">Kuis</a>
+    </nav>
+
+    <button class="icon-btn" id="themeBtn" title="Ganti tema" aria-label="Ganti tema">☼</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> PANDUAN DIGITAL PRAMUKA</div>
+        <h1>Belajar <em>Survival</em><br>lebih siap, lebih aman.</h1>
+        <p class="hero-text">
+          Ruang belajar interaktif untuk memahami prinsip bertahan hidup di alam,
+          kesiapsiagaan, navigasi, pertolongan awal, perlindungan diri, dan etika lingkungan.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#materi">Mulai Belajar <span>→</span></a>
+          <button class="btn ghost" id="randomBtn">Materi Acak ✦</button>
+        </div>
+        <div class="stats">
+          <div><strong>8</strong><span>Topik utama</span></div>
+          <div><strong>30+</strong><span>Poin pembelajaran</span></div>
+          <div><strong>15</strong><span>Soal kuis</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="compass-card">
+          <div class="compass-ring">
+            <span class="n">N</span><span class="e">E</span><span class="s">S</span><span class="w">W</span>
+            <div class="needle"></div>
+            <div class="compass-center">✦</div>
+          </div>
+          <div class="compass-info">
+            <span>ORIENTASI</span>
+            <strong>Know your direction.</strong>
+          </div>
+        </div>
+        <div class="floating-card float-one">💧 <span>Air<br><b>Prioritas</b></span></div>
+        <div class="floating-card float-two">🧭 <span>Navigasi<br><b>Dasar</b></span></div>
+        <div class="terrain-lines"></div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="notice-icon">!</div>
+      <div><strong>Utamakan keselamatan.</strong> Materi ini untuk pembelajaran Pramuka. Dalam keadaan darurat nyata, cari bantuan pembina, orang dewasa, petugas terlatih, atau layanan darurat setempat.</div>
+    </section>
+
+    <section class="section" id="materi">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">EXPLORE • 01</div>
+          <h2>Peta Materi Survival</h2>
+        </div>
+        <p>Gunakan kartu di bawah untuk membuka ringkasan setiap topik.</p>
+      </div>
+
+      <div class="topic-grid">
+        <article class="topic-card active" data-topic="mindset">
+          <div class="topic-no">01</div><div class="topic-icon">🧠</div>
+          <h3>Mindset & Prioritas</h3><p>Tenang, amati, rencanakan, bertindak.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="water">
+          <div class="topic-no">02</div><div class="topic-icon">💧</div>
+          <h3>Air & Hidrasi</h3><p>Prioritas kebutuhan air dan keamanan sumber.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="shelter">
+          <div class="topic-no">03</div><div class="topic-icon">⛺</div>
+          <h3>Perlindungan</h3><p>Memilih tempat aman dari cuaca dan bahaya.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="navigation">
+          <div class="topic-no">04</div><div class="topic-icon">🧭</div>
+          <h3>Navigasi</h3><p>Peta, arah mata angin, tanda alam, dan orientasi.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="firstaid">
+          <div class="topic-no">05</div><div class="topic-icon">🩹</div>
+          <h3>Pertolongan Awal</h3><p>Penilaian kondisi dan meminta bantuan dengan tepat.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="signal">
+          <div class="topic-no">06</div><div class="topic-icon">📣</div>
+          <h3>Sinyal & Komunikasi</h3><p>Membuat diri lebih mudah ditemukan.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="weather">
+          <div class="topic-no">07</div><div class="topic-icon">⛈️</div>
+          <h3>Cuaca & Risiko</h3><p>Mengenali perubahan cuaca dan mengurangi risiko.</p><span>Pelajari →</span>
+        </article>
+        <article class="topic-card" data-topic="ethics">
+          <div class="topic-no">08</div><div class="topic-icon">🌿</div>
+          <h3>Etika Alam</h3><p>Leave No Trace dan menjaga lingkungan.</p><span>Pelajari →</span>
+        </article>
+      </div>
+
+      <div class="lesson-panel" id="lessonPanel">
+        <div class="lesson-main">
+          <div class="lesson-label">TOPIK TERPILIH</div>
+          <h3 id="lessonTitle">Mindset & Prioritas</h3>
+          <p id="lessonIntro"></p>
+          <div class="lesson-points" id="lessonPoints"></div>
+        </div>
+        <aside class="lesson-aside">
+          <div class="aside-badge">PRAKTIK AMAN</div>
+          <h4 id="lessonTipTitle">Ingat prinsip P.A.N.I.C.</h4>
+          <p id="lessonTip"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt" id="perlengkapan">
+      <div class="section-head">
+        <div><div class="eyebrow">EXPLORE • 02</div><h2>Survival Checklist</h2></div>
+        <p>Tandai perlengkapan yang sudah kamu pahami fungsinya.</p>
+      </div>
+      <div class="check-grid" id="checkGrid"></div>
+      <div class="check-footer">
+        <span id="checkCount">0 / 12 dipahami</span>
+        <button class="text-btn" id="resetChecklist">Reset checklist</button>
+      </div>
+    </section>
+
+    <section class="section" id="alur">
+      <div class="section-head">
+        <div><div class="eyebrow">EXPLORE • 03</div><h2>Alur Saat Tersesat</h2></div>
+        <p>Gunakan urutan sederhana ini sebagai pengingat, bukan pengganti pelatihan langsung.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><div><h3>STOP</h3><p>Berhenti sejenak. Kendalikan kepanikan dan jangan bergerak tanpa rencana.</p></div></div>
+        <div class="step"><span>02</span><div><h3>OBSERVE</h3><p>Periksa kondisi diri, cuaca, lokasi, sumber bahaya, dan perlengkapan.</p></div></div>
+        <div class="step"><span>03</span><div><h3>PLAN</h3><p>Tentukan prioritas: keselamatan, perlindungan, komunikasi, lalu kebutuhan dasar.</p></div></div>
+        <div class="step"><span>04</span><div><h3>ACT</h3><p>Lakukan tindakan yang paling aman dan tetap mudah ditemukan oleh penolong.</p></div></div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="kuis">
+      <div class="quiz-wrap">
+        <div class="quiz-head">
+          <div><div class="eyebrow">CHALLENGE • 04</div><h2>Uji Pengetahuanmu</h2></div>
+          <div class="score-pill">Skor <b id="score">0</b>/<span id="totalQuestions">15</span></div>
+        </div>
+        <div class="quiz-card">
+          <div class="quiz-progress"><span id="quizProgress"></span></div>
+          <div class="question-no" id="questionNo">PERTANYAAN 01</div>
+          <h3 id="questionText"></h3>
+          <div class="answers" id="answers"></div>
+          <div class="quiz-actions">
+            <button class="btn primary" id="nextBtn" disabled>Jawab & Lanjut →</button>
+            <button class="text-btn" id="restartQuiz">Ulangi dari awal</button>
+          </div>
+          <div class="feedback" id="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="cta-inner">
+        <div class="eyebrow">KEEP LEARNING</div>
+        <h2>Survival bukan tentang menjadi nekat.<br><em>Survival adalah tentang membuat keputusan aman.</em></h2>
+        <p>Latih keterampilan bersama pembina dan tim, kenali lingkungan, dan selalu siapkan rencana sebelum kegiatan.</p>
+        <a class="btn primary" href="#beranda">Kembali ke atas ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">✦ SURVIVAL HUB <span>• PRAMUKA</span></div>
+    <p>Materi edukasi untuk kegiatan Pramuka. Belajar aman, bertanggung jawab, dan peduli alam.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
